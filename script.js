@@ -1,56 +1,5 @@
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', function() {
-    // Custom cursor
-    const cursor = document.querySelector('.cursor');
-    const cursorFollower = document.querySelector('.cursor-follower');
-    
-    document.addEventListener('mousemove', function(e) {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-        
-        setTimeout(function() {
-            cursorFollower.style.left = e.clientX + 'px';
-            cursorFollower.style.top = e.clientY + 'px';
-        }, 100);
-    });
-    
-    document.addEventListener('mousedown', function() {
-        cursor.style.width = '15px';
-        cursor.style.height = '15px';
-        cursorFollower.style.width = '40px';
-        cursorFollower.style.height = '40px';
-    });
-    
-    document.addEventListener('mouseup', function() {
-        cursor.style.width = '10px';
-        cursor.style.height = '10px';
-        cursorFollower.style.width = '30px';
-        cursorFollower.style.height = '30px';
-    });
-    
-    // Links and buttons cursor effect
-    const links = document.querySelectorAll('a, button, .filter-btn, .project-card');
-    
-    links.forEach(link => {
-        link.addEventListener('mouseenter', function() {
-            cursor.style.width = '0';
-            cursor.style.height = '0';
-            cursorFollower.style.width = '50px';
-            cursorFollower.style.height = '50px';
-            cursorFollower.style.borderWidth = '3px';
-            cursorFollower.style.opacity = '0.5';
-        });
-        
-        link.addEventListener('mouseleave', function() {
-            cursor.style.width = '10px';
-            cursor.style.height = '10px';
-            cursorFollower.style.width = '30px';
-            cursorFollower.style.height = '30px';
-            cursorFollower.style.borderWidth = '2px';
-            cursorFollower.style.opacity = '0.5';
-        });
-    });
-    
     // Header scroll effect
     const header = document.querySelector('header');
     
@@ -126,40 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     window.addEventListener('scroll', checkSkillsInView);
     checkSkillsInView(); // Check on page load
-    
-    // Projects filter
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            const filter = this.getAttribute('data-filter');
-            
-            projectCards.forEach(card => {
-                if (filter === 'all') {
-                    card.style.display = 'block';
-                } else if (card.getAttribute('data-category') === filter) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-                
-                // Reset and re-apply animation
-                card.classList.remove('active');
-                setTimeout(() => {
-                    if (card.style.display === 'block') {
-                        card.classList.add('active');
-                    }
-                }, 10);
-            });
-        });
-    });
     
     // Contact form submission
     const contactForm = document.getElementById('contactForm');
