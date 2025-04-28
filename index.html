@@ -3,455 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jitender Saini | Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="logo">
-            <a href="#hero">JS</a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#certificates" class="nav-link">Certificates</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-text">
-            <h1 class="animate-on-load">Hello, I'm <span class="highlight">Jitender Saini</span></h1>
-            <h2 class="animate-on-load delay-1">Computer Science Engineer</h2>
-            <p class="animate-on-load delay-2">Specializing in Data Structures, Algorithms & Data Analysis</p>
-            <div class="hero-buttons animate-on-load delay-3">
-                <a href="#contact" class="btn primary-btn">Get in touch</a>
-                <a href="resume.pdf.pdf" download class="btn secondary-btn">Download Resume</a>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-on-scroll">Hello, I'm <span class="highlight">Your Name</span></h1>
+                <h2 class="animate-on-scroll">Web Developer & Designer</h2>
+                <p class="animate-on-scroll">I create beautiful, functional websites with a focus on user experience.</p>
+                <div class="hero-buttons animate-on-scroll">
+                    <a href="resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-icons animate-on-scroll">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-        </div>
-        <div class="hero-image animate-on-load">
-            <div class="blob"></div>
-            <div class="profile-placeholder">
-                <span>JS</span>
+            <div class="hero-image animate-on-scroll">
+                <img src="/placeholder.svg?height=500&width=500" alt="Profile Image">
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
-        <div class="section-header">
-            <h2>About Me</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="about-content">
-            <div class="about-image reveal-element">
-                <div class="about-placeholder">
-                    <i class="fas fa-user"></i>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <img src="/placeholder.svg?height=400&width=400" alt="About Me">
                 </div>
-            </div>
-            <div class="about-text reveal-element">
-                <h3>Who am I?</h3>
-                <p>I'm a Computer Science Engineering student at Lovely Professional University with a passion for data structures, algorithms, and data analysis. I enjoy solving complex problems and creating efficient solutions.</p>
-                <p>With experience in various programming languages and tools, I've worked on projects ranging from data visualization dashboards to comprehensive management systems.</p>
-                <div class="personal-info">
-                    <div class="info-item">
-                        <span class="info-title">Name:</span>
-                        <span class="info-value">Jitender Saini</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-title">Email:</span>
-                        <span class="info-value">jitupawar525@gmail.com</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-title">Location:</span>
-                        <span class="info-value">Punjab, India</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-title">Education:</span>
-                        <span class="info-value">B.Tech in CSE</span>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Jitendersain-i" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/jitender-saini-77a547252" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:jitupawar525@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+919306073094" class="social-icon"><i class="fas fa-phone"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="section-header">
-            <h2>My Skills</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="skills-content">
-            <div class="skill-category reveal-element">
-                <h3>Programming Languages</h3>
-                <div class="skill-bars">
-                    <div class="skill-bar">
-                        <div class="skill-info">
-                            <span>C++</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress" data-percent="90"></div>
+                <div class="about-text">
+                    <p class="animate-on-scroll">I'm a passionate web developer with expertise in creating responsive and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I bring designs to life with clean, efficient code.</p>
+                    <p class="animate-on-scroll">My journey in web development started 5 years ago, and I've been continuously learning and improving my skills ever since. I believe in creating websites that not only look great but also provide an excellent user experience.</p>
+                    <div class="skills animate-on-scroll">
+                        <h3>My Skills</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-info">
-                            <span>Java</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress" data-percent="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-info">
-                            <span>Python</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress" data-percent="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-info">
-                            <span>R</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress" data-percent="75"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category reveal-element">
-                <h3>Frameworks & Tools</h3>
-                <div class="skill-icons">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML/CSS</span>
-                    </div>
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                        <span>MySQL</span>
-                    </div>
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="skill-icon">
-                        <i class="fas fa-chart-bar"></i>
-                        <span>Tableau</span>
-                    </div>
-                    <div class="skill-icon">
-                        <i class="fas fa-chart-pie"></i>
-                        <span>Power BI</span>
-                    </div>
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                        <span>NumPy</span>
-                    </div>
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                        <span>Pandas</span>
-                    </div>
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                        <span>TensorFlow</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-category reveal-element">
-                <h3>Soft Skills</h3>
-                <div class="soft-skills">
-                    <div class="soft-skill">Problem-Solving</div>
-                    <div class="soft-skill">Adaptability</div>
-                    <div class="soft-skill">Analytical Thinking</div>
-                    <div class="soft-skill">Logical Reasoning</div>
-                    <div class="soft-skill">Team Coordination</div>
-                    <div class="soft-skill">Event Organization</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="section-header">
-            <h2>My Projects</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card reveal-element">
-                <div class="project-img">
-                    <img src="dashboard.jpg" alt="Interactive Dashboard">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Interactive and Shareable Dashboard</h3>
-                    <p>Shareable Dashboards offer live, branded account reports via external links, with support for logos and custom domains. Enhances client collaboration by providing real-time, professional insights.</p>
-                    <div class="project-date">Nov 3, 2024 – Nov 25, 2024</div>
-                    <div class="project-tags">
-                        <span>Tableau Prep</span>
-                        <span>Tableau Public</span>
-                        <span>Excel</span>
-                        <span>Kaggle</span>
-                    </div>
-                </div>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">My Projects</h2>
+            <div class="project-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="app">Mobile Apps</button>
             </div>
-            <div class="project-card reveal-element">
-                <div class="project-img">
-                    <img src="hotel.jpg" alt="Hotel Management System">
-                    <div class="project-overlay">
+            <div class="project-grid">
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>A fully responsive e-commerce website with shopping cart functionality.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn btn-small">View Project</a>
+                            <a href="#" class="btn btn-small btn-outline">Source Code</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-info">
-                    <h3>Hotel Management System</h3>
-                    <p>Developed a comprehensive Hotel Management System to automate room reservations, check-ins/outs, and billing. Integrated an intuitive UI with a robust backend to enhance efficiency and minimize manual errors.</p>
-                    <div class="project-date">June 5, 2024 – July 31, 2024</div>
-                    <div class="project-tags">
-                        <span>Java</span>
-                        <span>Serialization</span>
-                        <span>Data Structures</span>
-                        <span>Collections</span>
+                <div class="project-card animate-on-scroll" data-category="design">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Design</h3>
+                        <p>A modern portfolio design with smooth animations and transitions.</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                            <span>Prototyping</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Project</a>
+                            <a href="#" class="btn btn-small btn-outline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-category="app">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracker App</h3>
+                        <p>A mobile app for tracking workouts and monitoring fitness progress.</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Project</a>
+                            <a href="#" class="btn btn-small btn-outline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>A weather dashboard that displays current and forecasted weather data.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Project</a>
+                            <a href="#" class="btn btn-small btn-outline">Source Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="section-header">
-            <h2>Education</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item reveal-element">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <span>2022 - Present</span>
-                </div>
-                <div class="timeline-content">
-                    <h3>Bachelor of Technology - Computer Science and Engineering</h3>
-                    <h4>Lovely Professional University, Jalandhar, Punjab</h4>
-                    <p>CGPA: 7.30</p>
-                </div>
-            </div>
-            <div class="timeline-item reveal-element">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <span>2020 - 2022</span>
-                </div>
-                <div class="timeline-content">
-                    <h3>Intermediate</h3>
-                    <h4>Dharam Public School, Palwal, Haryana</h4>
-                    <p>Percentage: 76.4%</p>
-                </div>
-            </div>
-            <div class="timeline-item reveal-element">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <span>2019 - 2020</span>
-                </div>
-                <div class="timeline-content">
-                    <h3>Matriculation</h3>
-                    <h4>Dharam Public School, Palwal, Haryana</h4>
-                    <p>Percentage: 88.2%</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Training & Certificates Section -->
     <section id="certificates" class="certificates">
-        <div class="section-header">
-            <h2>Training & Certificates</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="certificates-container">
-            <div class="certificate-category">
-                <h3>Summer Training</h3>
-                <div class="certificate-card reveal-element">
-                    <div class="certificate-icon">
-                        <i class="fas fa-laptop-code"></i>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Certificates</h2>
+            <div class="certificate-slider">
+                <div class="certificate-slide animate-on-scroll">
+                    <div class="certificate-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Certificate 1">
                     </div>
-                    <div class="certificate-content">
-                        <h4>Coding Spoon – Practice Data Structures and Algorithms</h4>
-                        <p class="certificate-date">June 5, 2024 – July 31, 2024</p>
-                        <p>Completed a summer training internship on Practice in Data Structures and Algorithms with the support of Lovely Professional University and Coding Spoon.</p>
-                        <p>Covered key concepts such as linked lists, trees, graphs and dynamic programming.</p>
-                        <p>Designed and implemented a basic Hotel Management System as a capstone project.</p>
-                        <div class="certificate-tags">
-                            <span>Java</span>
-                            <span>Data Structures</span>
-                            <span>Algorithms</span>
-                            <span>OOP</span>
-                        </div>
+                    <div class="certificate-info">
+                        <h3>Web Development Bootcamp</h3>
+                        <p>Udemy - 2023</p>
                     </div>
                 </div>
-            </div>
-            <div class="certificate-category">
-                <h3>Certifications</h3>
-                <div class="certificates-grid">
-                    <div class="certificate-item reveal-element">
-                        <div class="certificate-badge">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h4>Cloud Computing</h4>
-                        <p>IIT Kharagpur</p>
-                        <p class="certificate-date">December 2024</p>
+                <div class="certificate-slide animate-on-scroll">
+                    <div class="certificate-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Certificate 2">
                     </div>
-                    <div class="certificate-item reveal-element">
-                        <div class="certificate-badge">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <h4>Data Analysis Using Tableau</h4>
-                        <p>Coursera</p>
-                        <p class="certificate-date">December 2024</p>
+                    <div class="certificate-info">
+                        <h3>JavaScript Algorithms and Data Structures</h3>
+                        <p>freeCodeCamp - 2022</p>
                     </div>
-                    <div class="certificate-item reveal-element">
-                        <div class="certificate-badge">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h4>Data Structure & Algorithms – Practice (Java)</h4>
-                        <p>Coding Spoons</p>
-                        <p class="certificate-date">July 2024</p>
+                </div>
+                <div class="certificate-slide animate-on-scroll">
+                    <div class="certificate-image">
+                        <img src="/placeholder.svg?height=300&width=500" alt="Certificate 3">
                     </div>
+                    <div class="certificate-info">
+                        <h3>React - The Complete Guide</h3>
+                        <p>Udemy - 2022</p>
+                    </div>
+                </div>
+                <div class="certificate-navigation">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="section-header">
-            <h2>Achievements</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="achievements-container">
-            <div class="achievement-card reveal-element">
-                <div class="achievement-icon">
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <div class="achievement-content">
-                    <h3>Inter hostel Tug of War Champion</h3>
-                    <p>Led the hostel team to victory as the Tug of War Champion, demonstrating strength, strategy, and team coordination.</p>
-                </div>
-            </div>
-            <div class="achievement-card reveal-element">
-                <div class="achievement-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <div class="achievement-content">
-                    <h3>Club Volunteer - Anicos Club</h3>
-                    <p>Contributed to language learning and cultural exchange initiatives within the campus community. Organized and promoted language workshops and cultural exchange events, increasing event participation by 30%.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="section-header">
-            <h2>Get In Touch</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="contact-content">
-            <div class="contact-info reveal-element">
-                <h3>Contact Information</h3>
-                <p>Feel free to reach out to me for any questions or opportunities!</p>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Jalandhar, Punjab, India</p>
-                        </div>
-                    </div>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
-                            <p>jitupawar525@gmail.com</p>
+                            <h3>Email</h3>
+                            <p>your.email@example.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Phone</h4>
-                            <p>+91 9306073094</p>
+                            <h3>Phone</h3>
+                            <p>+1 (123) 456-7890</p>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>New York, NY, USA</p>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/Jitendersain-i" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/jitender-saini-77a547252" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="contact-form reveal-element">
-                <h3>Send Me a Message</h3>
-                <form id="contactForm">
+                <form class="contact-form animate-on-scroll">
                     <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        <label for="name">Your Name</label>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        <label for="email">Your Email</label>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        <label for="message">Your Message</label>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn primary-btn">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <a href="#hero">JS</a>
-            </div>
-            <p>&copy; 2024 Jitender Saini. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
             <div class="back-to-top">
-                <a href="#hero"><i class="fas fa-arrow-up"></i></a>
+                <a href="#home"><i class="fas fa-arrow-up"></i></a>
             </div>
         </div>
     </footer>
